@@ -51,7 +51,7 @@ public class MainActivityFragment extends Fragment {
 
     public void launchDisplayJokeActivity(){
         Context context = getActivity();
-        Intent intent = new Intent(context, DisplayJokeActivity.class);
+        Intent intent = new Intent(getContext(), DisplayJokeActivity.class);
         intent.putExtra(context.getString(R.string.jokeEnvelope), loadedJoke);
         //Toast.makeText(context, loadedJoke, Toast.LENGTH_LONG).show();
         context.startActivity(intent);
